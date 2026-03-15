@@ -1,0 +1,5 @@
+ [  
+   { "input": "what a fun party", "output": "🥳🎉🎈" },  
+   { "input": "good morning sunshine", "output": "☀️🌻😊" },  
+   { "input": "so tired today", "output": "😴💤" }  
+ ]
