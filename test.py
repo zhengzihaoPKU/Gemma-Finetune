@@ -10,7 +10,7 @@ prompt = "translate 'Feeling happy' to emoji\n"
 input_data = tokenizer(prompt, return_tensors="pt").to('cuda')
 output = lora_model.generate(
     input_data["input_ids"],
-    do_sample=True, 
+    do_sample=True,
     max_new_tokens=50, 
     top_p=0.9,              # 核采样阈值
     temperature=0.7,        # 控制随机性（可选）
