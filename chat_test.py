@@ -1,4 +1,8 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
+from transformers import (
+    AutoTokenizer, 
+    AutoModelForCausalLM, 
+    pipeline
+)
 
 merged_model_path = "results/merge"  
 

@@ -41,11 +41,13 @@ QLoRA:
 ALoRA:
 
 ## Key Notes
-The versions of several key installation packages are listed as follows:
+1. The versions of several key installation packages are listed as follows:
 
-```
-pyarrow == 20.0.0, peft == 0.17.0, transformers == 4.57.0
-```
+    ```
+    pyarrow == 20.0.0, peft == 0.17.0, transformers == 4.57.0
+    ```
+
+2. The model must be "instruct" version.
 
 ## Reference
 [Google Colab](https://colab.research.google.com/github/google-gemini/gemma-cookbook/blob/main/Demos/Emoji-Gemma-on-Web/resources/Fine_tune_Gemma_3_270M_for_emoji_generation.ipynb#scrollTo=VbeyDcpwi4IB)
