@@ -33,6 +33,9 @@ bash seript/chat_test.sh
 
 ![example](./figs/example.jpg)
 
+## Model
+We realese our [fine-tuned model](https://huggingface.co/zhengzihaoPKU/gemma-3-270m-it-emoji-finetune) in Huggingface Hub.
+
 ## Test Results
 LoRA:
 
