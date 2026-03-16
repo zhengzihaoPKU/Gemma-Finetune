@@ -10,11 +10,9 @@ def lora_config_setup(args):
     lora_config = LoraConfig(
         r=args.lora_rank,   # lora rank
         lora_alpha=args.lora_alpha,   
-        target_modules=[  
-            "q_proj", "k_proj", "v_proj", "o_proj",  # Attn layer
-            "gate_proj", "up_proj", "down_proj"     # MLP layer
-        ], 
+        target_modules="all-linear", 
         lora_dropout=args.lora_dropout,
+        modules_to_save=["lm_head", "embed_tokens"],
         task_type=args.lora_tasktype  # 为了清晰起见显式指定
     )
     return lora_config

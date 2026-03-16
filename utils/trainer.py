@@ -13,6 +13,12 @@ def trainer_config_setup(args):
         num_train_epochs=args.num_train_epochs,
         remove_unused_columns=False,
         logging_steps=args.logging_steps,
+        learning_rate=5e-5,                               # Learning rate,
+        lr_scheduler_type="constant",                     # Use constant learning rate scheduler
+        gradient_checkpointing=False,                     # Use gradient checkpointing to save memory
+        optim="adamw_torch_fused",                        # Use fused adamw optimizer
+        report_to="tensorboard",                          # Report metrics to tensorboard
+        weight_decay=0.01,   
     )
     return training_args
 
