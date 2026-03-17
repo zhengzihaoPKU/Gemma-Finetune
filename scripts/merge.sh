@@ -1,1 +1,1 @@
-python merge.py
+python src/merge.py

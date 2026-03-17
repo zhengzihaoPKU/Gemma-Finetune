@@ -1,8 +1,9 @@
-python train.py \
+python src/train.py \
 --model_name google/gemma-3-270m-it \
 --dataset_name kr15t3n/text2emoji \
 --device cuda:0 \
 --lora_rank 16 \
 --lora_alpha 32 \
---per_device_train_batch_size 4 \
---num_train_epochs 3 \
+--output_dir ./logs/ \
+--per_device_train_batch_size 32 \
+--num_train_epochs 15 \

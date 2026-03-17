@@ -2,8 +2,8 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel
 
-adapter_path = "results/checkpoint-951"                 # Choose which adapters to merge, otherwise defaults to latest
-merged_model_path = "results/merge"              # Location of merged model directory
+adapter_path = "./logs/checkpoint-600"                 # Choose which adapters to merge, otherwise defaults to latest
+merged_model_path = "./logs/merge"              # Location of merged model directory
 
 # Load base model and tokenizer
 base_model = AutoModelForCausalLM.from_pretrained("google/gemma-3-270m-it", device_map="auto")

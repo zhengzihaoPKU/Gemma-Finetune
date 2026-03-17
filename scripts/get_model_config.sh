@@ -1,0 +1,1 @@
+python src/get_model_config.py
